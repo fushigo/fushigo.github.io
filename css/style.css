@@ -304,9 +304,16 @@ header nav ul li a {
   text-decoration: none;
   color: #8d8989;
   font-weight: 500;
+  transition: all 1s ease-in-out;
 }
 header nav ul li a:hover {
   color: var(--headingColor);
+}
+#nav ul li a.active-nav {
+  color: var(--headingColor);
+  border-bottom: 1px solid #008bf8;
+  font-weight: bold;
+  transition: all 1s ease-in-out;
 }
 /* END STYLE HEADER */
 
@@ -633,7 +640,7 @@ main {
   justify-content: space-between;
   position: relative;
   width: 45%;
-  height: 20rem;
+  height: 25rem;
   transition: all 0.3s;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.356);
   background-color: var(--primaryColor);
@@ -654,7 +661,7 @@ main {
   transition: 0.3s ease-out;
 }
 .project .container .card-box:hover {
-  border: 2px solid #008bf8;
+  border: 1px solid #008bf8;
 }
 .project .container .card-box:hover .card-button {
   cursor: pointer;
@@ -681,6 +688,38 @@ main {
 }
 #icon_tech {
   font-size: 2rem;
+}
+.btn {
+  margin-top: 2rem;
+  padding: 1rem 5rem;
+  font-weight: 700;
+  background: rgb(255, 255, 255);
+  color: var(--headingColor);
+  border-radius: 0.5rem;
+  border-bottom: 2px solid rgb(37, 137, 252);
+  border-right: 2px solid rgb(37, 137, 252);
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  transition-duration: 0.5s;
+  transition-property: border-top, border-left, border-bottom, border-right,
+    box-shadow;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border-top: 2px solid rgb(37, 137, 252);
+  border-left: 2px solid rgb(37, 137, 252);
+  border-bottom: 2px solid rgb(77, 74, 255);
+  border-right: 2px solid rgb(58, 78, 255);
+  box-shadow: rgba(24, 78, 228, 0.4) 5px 5px, rgba(0, 18, 184, 0.3) 10px 10px,
+    rgba(2, 18, 63, 0.2) 15px 15px;
+}
+.project .container .technology {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
 }
 /* END STYLE PROJECT */
 
@@ -1439,6 +1478,10 @@ footer .container .row-3 {
     padding: 2rem 2rem;
     height: 31rem;
     width: 100%;
+  }
+  footer{
+    height: max-content;
+    padding: 2rem 2rem;
   }
 }
 
