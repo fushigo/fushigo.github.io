@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="../css/project.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="frontPage" id="Top">
+        <div class="container">
+          <h1>Rizky Andika Sukma</h1>
+          <h1 id="specialText">Frontend Web Developers</h1>
+          <p id="subText">
+            I am a junior programmer familiar with the Javascript programming
+            language
+          </p>
+          <div class="iconSocialMedia">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="300"
+              id="up"
+              class="icon"
+            >
+              <a target="_blank" href="https://github.com/Fushigo"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="400"
+              class="icon"
+            >
+              <a
+                target="_blank"
+                href="https://www.instagram.com/fushigo__/?igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              class="icon"
+            >
+              <a
+                target="_blank"
+                href="https://twitter.com/Fushigo12?t=8uohKJJmPi5c7zX5Uxbsjw&s=08"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="600"
+              id="up"
+              class="icon"
+            >
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/rizky-andika-25b324265/"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project" id="project">
+        <div class="container">
+          <div class="project-heading">
+            <h1>Project Gallery</h1>
+          </div>
+          <div class="navigation-project">
+            <div class="nav">
+              <div
+                id="default"
+                class="project-nav"
+                onclick="openProject(event, 'website')"
+              >
+                <h1>Website</h1>
+              </div>
+              <div
+                class="project-nav"
+                onclick="openProject(event, 'mobileApp')"
+              >
+                <h1>Mobile App</h1>
+              </div>
+              <div
+                class="project-nav"
+                onclick="openProject(event, 'botProject')"
+              >
+                <h1>Bot Project</h1>
+              </div>
+            </div>
+          </div>
+          <div class="content-project">
+            <!-- Website Project -->
+            <div id="website" class="tabcontent">
+              <!-- <h3>Website Project</h3>
+                <p>Empety Project!</p> -->
+
+              <div class="website-project-container">
+                <!-- Website Project 1 -->
+                <div class="website-project-content">
+                  <div class="card-box">
+                    <img src="../asset/png/Glatz-Autocare.png" alt="" />
+                    <div class="text-card">
+                      <h2 id="card-title">Glatz Autocare</h2>
+                      <h2 id="card-Subtitle">Type: Company Profile</h2>
+                    </div>
+                    <div class="technology">
+                      <i id="icon_tech" class="fa-brands fa-wordpress"></i>
+                      <i id="icon_tech" class="fa-brands fa-elementor"></i>
+                    </div>
+                    <button id="glatz" class="card-button">Preview</button>
+                  </div>
+                </div>
+                <!-- Website Project 2 -->
+                <div class="website-project-content">
+                  <div class="card-box">
+                    <img
+                      src="../asset/png/Digital Akademi Indonesia.png"
+                      alt=""
+                    />
+                    <div class="text-card">
+                      <h2 id="card-title">Digital Akademi Indonesia</h2>
+                      <h2 id="card-Subtitle">Type: Campus Profile</h2>
+                    </div>
+                    <div class="technology">
+                      <i id="icon_tech" class="fa-brands fa-wordpress"></i>
+                      <i id="icon_tech" class="fa-brands fa-elementor"></i>
+                    </div>
+                    <button id="dai" class="card-button">Preview</button>
+                  </div>
+                </div>
+                <!-- Website Project 3 -->
+                <div class="website-project-content">
+                  <div class="card-box">
+                    <img src="../asset/png/Madani-Plast.png" alt="" />
+                    <div class="text-card">
+                      <h2 id="card-title">Madani Plast</h2>
+                      <h2 id="card-Subtitle">Type: Company Profile</h2>
+                    </div>
+                    <div class="technology">
+                      <i id="icon_tech" class="fa-brands fa-wordpress"></i>
+                      <i id="icon_tech" class="fa-brands fa-elementor"></i>
+                    </div>
+                    <button id="madani" class="card-button">Preview</button>
+                  </div>
+                </div>
+                <!-- Website Project 4 -->
+                <div class="website-project-content">
+                  <div class="card-box">
+                    <img src="../asset/png/kelas-magang.png" alt="" />
+                    <div class="text-card">
+                      <h2 id="card-title">Kelas Magang AjakOnline</h2>
+                      <h2 id="card-Subtitle">Type: Company Profile</h2>
+                    </div>
+                    <div class="technology">
+                      <i id="icon_tech" class="fa-brands fa-wordpress"></i>
+                      <i id="icon_tech" class="fa-brands fa-elementor"></i>
+                    </div>
+                    <button id="ajak" class="card-button">Preview</button>
+                  </div>
+                </div>
+                <!-- Website Project 5 -->
+                <div class="website-project-content">
+                  <div class="card-box">
+                    <img src="../asset/png/Batik-Chandani.png" alt="" />
+                    <div class="text-card">
+                      <h2 id="card-title">Batik Chandani</h2>
+                      <h2 id="card-Subtitle">Type: Company Profile</h2>
+                    </div>
+                    <div class="technology">
+                      <i id="icon_tech" class="fa-brands fa-wordpress"></i>
+                      <i id="icon_tech" class="fa-brands fa-elementor"></i>
+                    </div>
+                    <button id="chandani" class="card-button">Preview</button>
+                  </div>
+                </div>
+                <div class="website-project-content">
+                  <div class="card-box">
+                    <img src="../asset/png/griyavandel.png" alt="" />
+                    <div class="text-card">
+                      <h2 id="card-title">Griya Vandel</h2>
+                      <h2 id="card-Subtitle">Type: Company Profile</h2>
+                    </div>
+                    <div class="technology">
+                      <i id="icon_tech" class="fa-brands fa-wordpress"></i>
+                      <i id="icon_tech" class="fa-brands fa-elementor"></i>
+                    </div>
+                    <button id="vandel" class="card-button">Preview</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Mobile App Project -->
+            <div id="mobileApp" class="tabcontent">
+              <h3>Mobile App Project</h3>
+              <p>Empety Project!</p>
+            </div>
+            <!-- BOT Project -->
+            <div id="botProject" class="tabcontent">
+              <h3>BOT Project</h3>
+              <p>Empety Project!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row-1">
+          <h2>Let's Make Some Project!</h2>
+          <h2 id="specialText">Rizky Andika Sukma</h2>
+        </div>
+        <div class="row-2">
+          <h2>Get latest update here</h2>
+          <div class="line"></div>
+          <div class="social-media">
+            <a target="_blank" href="https://github.com/Fushigo"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/fushigo__/?igshid=MzNlNGNkZWQ4Mg%3D%3D"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://twitter.com/Fushigo12?t=8uohKJJmPi5c7zX5Uxbsjw&s=08"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row-3">
+          <h4>Thank you for visiting my page</h4>
+          <h4>Copyright © 2023 Rizky Andika Sukma</h4>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/project.js"></script>
+  </body>
+</html>
