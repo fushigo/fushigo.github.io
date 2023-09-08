@@ -5,7 +5,7 @@ window.addEventListener("scroll", () => {
   buttonTop.classList.toggle("active", scrollY > 100);
 });
 
-let section = document.querySelectorAll("section");
+let section = document.querySelectorAll(".section");
 let navLink = document.querySelectorAll("header nav ul li a");
 
 window.onscroll = () => {
