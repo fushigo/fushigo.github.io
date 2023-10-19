@@ -614,7 +614,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: max-content;
+  height: auto;
   padding-bottom: 5rem;
   gap: 2rem;
 }
@@ -631,7 +631,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   width: 80%;
-  height: max-content;
+  height: auto;
   row-gap: 3rem;
 }
 .project .container .card-box {
