@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="rizky andika sukma" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="junior programmer, Javascript, web development, rizky andika sukma"
+    />
+    <meta
+      name="description"
+      content="Seorang junior programmer yang familiar dengan bahasa pemrograman Javascript"
+    />
+    <title>Rizky Andika Sukma</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="shortcut icon" href="./asset/ic_man.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Signika&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./vendor/aos/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+      .project-btn:hover #frame::before {
+        width: 20px;
+        left: 20%;
+      }
+      .project-btn:hover #frame::after {
+        width: 20px;
+        left: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="w-full h-auto px-8 py-4 fixed top-0 bg-white flex flex-row justify-between items-center shadow-md z-[99999] 2xl:py-8"
+    >
+      <!-- logo -->
+      <div class="font-Signika lg:text-xl xl:text-2xl 2xl:text-3xl">
+        Rizky Andika S
+      </div>
+      <!-- Mobile NavBar -->
+      <nav
+        id="NavBar"
+        class="hidden flex-col absolute top-14 right-0 py-4 px-8 h-screen w-1/2 gap-8 shadow-lg font-Signika z-50 bg-white lg:hidden"
+      >
+        <a href="#beranda">Beranda</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+        <a
+          class="mt-4 py-2 px-4 rounded-full bg-[#0077FF] text-center text-white"
+          href="#about"
+          >Explore</a
+        >
+      </nav>
+
+      <!-- Desktop NavBar -->
+      <nav
+        id="NavBar"
+        class="hidden flex-row h-auto w-1/2 gap-8 items-center justify-between font-Signika z-50 lg:flex ml-96 2xl:text-xl"
+      >
+        <a href="#beranda">Beranda</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+        <a
+          class="py-2 px-4 rounded-full bg-[#0077FF] text-center text-white"
+          href="#about"
+          >Explore</a
+        >
+      </nav>
+      <div>
+        <img
+          id="hamburger"
+          class="w-4 cursor-pointer lg:hidden"
+          src="./asset/hamburger.png"
+          alt=""
+        />
+      </div>
+    </header>
+
+    <main
+      class="flex flex-col w-auto justify-center items-center h-auto 2xl:justify-center 2xl:items-center overflow-hidden"
+    >
+      <!-- Hero Section -->
+      <div
+        id="beranda"
+        class="container flex flex-col gap-8 pt-20 lg:flex-row-reverse lg:justify-center lg:items-center lg:px-16 xl:px-20 2xl:container"
+      >
+        <div
+          class="w-full h-auto flex justify-center items-center p-8 2xl:w-1/2"
+        >
+          <img
+            data-aos-duration="1500"
+            data-aos="fade-up-left"
+            class="w-full sm:w-1/2 lg:w-full"
+            src="./asset/ic_man.png"
+            alt=""
+          />
+        </div>
+        <div
+          data-aos-duration="1500"
+          data-aos="fade-right"
+          class="flex flex-col gap-4 px-8 sm:px-28 justify-center lg:px-0 xl:w-full 2xl:w-1/2 2xl:gap-12"
+        >
+          <h1 class="font-Signika md:text-xl 2xl:text-3xl">
+            👋Hai, Saya Rizky Andika Sukma
+          </h1>
+          <h2
+            class="text-3xl font-Signika font-bold bg-gradient-to-r from-sky-700 to-sky-500 bg-clip-text text-transparent md:text-5xl xl:text-6xl 2xl:text-7xl"
+          >
+            <strong>Frontend Engineer</strong>
+          </h2>
+          <p class="font-Poppins text-sm md:text-base 2xl:text-3xl">
+            Saya adalah seorang Programmer Junior, yang familiar dengan bahasa
+            pemrograman Javascript.
+          </p>
+          <div
+            class="font-Signika flex flex-row gap-4 md:text-2xl lg:px-0 2xl:text-2xl"
+          >
+            <p>Follow Me</p>
+            <div class="flex flex-row gap-8 xl:text-2xl">
+              <a
+                href="https://www.instagram.com/fushigo__/?igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/fushigo/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/rizky-andika-25b324265/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="flex flex-row gap-8 w-full h-auto font-Signika lg:px-0">
+            <a
+              class="px-8 py-2 bg-[#0077FF] text-white rounded-md shadow-md 2xl:text-3xl"
+              href="#project"
+              >Project</a
+            >
+            <a
+              class="px-8 py-2 rounded-md border-2 border-[#0077FF] shadow-md 2xl:text-3xl"
+              href="#contact"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex w-full h-auto flex-row flex-wrap gap-4 justify-center items-center py-8 bg-slate-100 my-8 2xl:py-12 2xl:w-full"
+      >
+        <img src="./asset/logo-1.png" alt="" />
+        <img src="./asset/logo-2.png" alt="" />
+      </div>
+
+      <!-- About Me -->
+      <div
+        id="about"
+        class="container flex flex-col p-8 items-center gap-8 sm:px-28 lg:flex-row lg:px-16 2xl:container"
+      >
+        <img
+          data-aos="zoom-in-right"
+          class="rounded-lg sm:w-1/2 md:w-1/2 lg:w-1/4"
+          src="./asset/ic_about.jpg"
+          alt=""
+        />
+        <div class="space-y-4">
+          <h2
+            data-aos="zoom-out"
+            class="font-Signika text-2xl text-center md:text-3xl lg:text-left 2xl:text-4xl"
+          >
+            About Me
+          </h2>
+          <p
+            data-aos="zoom-out"
+            class="font-Poppins text-sm md:text-base md:text-center lg:text-left 2xl:text-2xl"
+          >
+            Hai, Perkenalkan saya <strong>Rizky Andika Sukma</strong> . Seorang
+            siswa dari Sekolah Menengah Kejuruan. Saya memiliki ketertarikan
+            yang tinggi pada dunia teknologi. Saat ini, saya tengah mengejar
+            studi di bidang <strong>Rekayasa Perangkat Lunak</strong> , dan saya
+            berkomitmen untuk terus belajar dan mengembangkan kemampuan dalam
+            dunia pemrograman."
+          </p>
+          <div class="flex flex-col gap-4 lg:flex-row">
+            <!-- Card 1 -->
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              class="bg-white shadow-lg p-8 flex flex-col gap-4 rounded-xl"
+            >
+              <img
+                class="w-1/4 rounded-xl p-4 bg-violet-200 md:w-1/6 lg:w-1/3"
+                src="./asset/ui.png"
+                alt=""
+              />
+              <h3 class="font-Signika md:text-xl 2xl:text-2xl">UI/UX Design</h3>
+              <p class="font-Poppins text-sm md:text-base 2xl:text-xl">
+                Membuat design website dan aplikasi mobile yang interaktif
+                menggunakan Figma.
+              </p>
+            </div>
+            <!-- Card 2 -->
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+              class="bg-white p-8 flex flex-col gap-4 rounded-xl shadow-lg"
+            >
+              <img
+                class="w-1/4 rounded-xl p-4 bg-sky-200 md:w-1/6 lg:w-1/3"
+                src="./asset/coding.png"
+                alt=""
+              />
+              <h3 class="font-Signika md:text-xl 2xl:text-2xl">
+                Frontend Development
+              </h3>
+              <p class="font-Poppins text-sm md:text-base 2xl:text-xl">
+                Membuat wesbite interaktif dan responsive dengan baik
+                menggunakan cara Koding maupun CMS Wordpress.
+              </p>
+            </div>
+            <!-- Card 3 -->
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              data-aos-delay="700"
+              class="bg-white shadow-lg p-8 flex flex-col gap-4 rounded-xl"
+            >
+              <img
+                class="w-1/4 rounded-xl p-4 bg-green-200 md:w-1/6 lg:w-1/3"
+                src="./asset/seo.png"
+                alt=""
+              />
+              <h3 class="font-Signika md:text-xl 2xl:text-2xl">SEO</h3>
+              <p class="font-Poppins text-sm md:text-base 2xl:text-xl">
+                Pengoptimalan website supaya dapat terbaca oleh pencarian google
+                dengan lebih baik.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- My Skills -->
+      <div
+        class="container flex flex-col p-2 gap-8 text-white sm:px-12 2xl:container"
+      >
+        <div
+          class="bg-[#0077FF] flex flex-col p-8 gap-8 rounded-lg md:flex-row-reverse md:justify-around md:items-center"
+        >
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            class="space-y-4 md:w-1/3"
+          >
+            <h2
+              class="font-Signika text-center text-2xl font-bold md:text-3xl 2xl:text-4xl"
+            >
+              Exploring My <br />
+              Development Skills
+            </h2>
+            <p
+              class="font-Poppins text-sm text-center md:text-base 2xl:text-xl"
+            >
+              Ini adalah beberapa kemampuan yang saya miliki dalam membuat
+              maupun mengembangkan website dan aplikasi, Saya akan terus melatih
+              skill ini dan meningkatkannya setiap saat.
+            </p>
+          </div>
+          <div class="w-full h-auto flex flex-col gap-4 md:w-1/3">
+            <div class="space-y-4">
+              <p class="font-Signika 2xl:text-2xl">Language</p>
+              <div class="flex flex-row flex-wrap w-full h-auto gap-4">
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                  class="fa-brands fa-html5 py-2 px-4 bg-white text-black text-xl rounded-sm shadow-lg 2xl:text-4xl"
+                ></i>
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
+                  class="fa-brands fa-css3 py-2 px-4 bg-white text-black text-xl rounded-sm shadow-lg 2xl:text-4xl"
+                ></i>
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="700"
+                  class="fa-brands fa-js py-2 px-4 bg-white text-black text-xl rounded-sm shadow-lg 2xl:text-4xl"
+                ></i>
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="900"
+                  class="fa-brands fa-php py-2 px-4 bg-white text-black text-xl rounded-sm shadow-lg 2xl:text-4xl"
+                ></i>
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="1100"
+                  class="fa-brands fa-java py-2 px-4 bg-white text-black text-xl rounded-sm shadow-lg 2xl:text-4xl"
+                ></i>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <p class="font-Signika 2xl:text-2xl">Frontend</p>
+              <div class="flex flex-row flex-wrap w-full h-auto gap-4">
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                  class="fa-brands fa-bootstrap py-2 px-4 bg-white text-black text-xl rounded-sm shadow-lg 2xl:text-4xl"
+                ></i>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <p class="font-Signika 2xl:text-2xl">Backend</p>
+              <div class="flex flex-row flex-wrap w-full h-auto gap-4">
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                  class="fa-brands fa-laravel py-2 px-4 bg-white text-black text-xl rounded-sm shadow-lg 2xl:text-4xl"
+                ></i>
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
+                  class="fa-brands fa-node-js py-2 px-4 bg-white text-black text-xl rounded-sm shadow-lg 2xl:text-4xl"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experiences &  Education -->
+      <div class="container w-full h-auto mt-8 2xl:container">
+        <!-- Work Experience -->
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          class="w-full h-auto p-8 flex flex-col justify-center items-center"
+        >
+          <div class="w-full h-auto mb-8">
+            <h2 class="text-2xl font-bold font-Signika sm:text-3xl lg:text-4xl">
+              Work Experiences
+            </h2>
+            <p class="text-sm font-Poppins sm:text-lg">
+              Beberapa pengalaman kerja saya sampai saat ini.
+            </p>
+          </div>
+          <!-- Card -->
+          <div
+            class="flex flex-col w-full h-max p-8 gap-8 items-center justify-center bg-sky-950 rounded-md border-l-[10px] border-sky-400 lg:flex-row"
+          >
+            <img src="./asset/logoAjak.svg" alt="" />
+            <div class="flex flex-col"></div>
+            <div class="w-full h-auto flex flex-col font-Signika text-white">
+              <h2 class="text-2xl md:text-4xl">AjakOnline</h2>
+              <p class="md:text-2xl">Maret 2022 - Sekarang</p>
+              <p class="md:text-xl">Pengalaman yang didapat:</p>
+              <ul class="list-disc pl-5 text-sm sm:text-lg">
+                <li><p>Membuat Design Website</p></li>
+                <li><p>Membuat Website dengan Teknologi Wordpress</p></li>
+                <li><p>Pengoptimalan Search Engine (SEO)</p></li>
+                <li><p>Konfigurasi Domain dan Hosting</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div
+          class="w-full h-max flex flex-col items-center justify-center p-8 text-black"
+        >
+          <h2
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            class="text-xl font-Signika sm:text-3xl font-bold"
+          >
+            My Education
+          </h2>
+          <p
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            class="text-sm text-center font-Poppins sm:text-lg"
+          >
+            Berikut ini adalah Riwayat Pendidikan yang telah saya lalui sampai
+            saat ini.
+          </p>
+          <!-- card 1 -->
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            class="w-full h-max p-4 bg-white font-Signika shadow-xl border-l-8 border-cyan-400 mt-8 flex flex-col gap-4 rounded-md"
+          >
+            <div>
+              <h3 class="sm:text-xl lg:text-2xl">SMK NEGERI 5 SURAKARTA</h3>
+              <h4 class="sm:text-lg">2021 - Sekarang</h4>
+            </div>
+            <p class="text-sm sm:text-base">
+              Selama menempuh pendidikan di SMK NEGERI 5 SURAKARTA banyak sekali
+              ilmu dan pengalaman yang saya dapatkan seperti, Pembuatan Website,
+              Pembuatan Aplikasi, Pengenalan dengan SDLC, Konsep Pemodelan
+              Perangkat Lunak, dan Basis Data. Selain itu Saya juga dapat
+              Mengikuti Program PKL dari Sekolah ke Industri / Perusahaan.
+            </p>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            class="w-full h-max p-4 bg-white font-Signika shadow-xl border-l-8 border-yellow-400 mt-8 flex flex-col gap-4 rounded-md"
+          >
+            <div>
+              <h3 class="sm:text-xl lg:text-2xl">
+                Kelas Pelatihan SMK NEGERI 5 SURAKARTA & UNIVERSITAS GADJAH MADA
+                By ASTRA SINARMAS
+              </h3>
+              <h4 class="sm:text-lg">2022 - Sekarang</h4>
+            </div>
+            <p class="text-sm sm:text-base">
+              Kelas pelatihan ini merupakan program kerjasama antara SMK NEGERI
+              5 SURAKARTA dengan Astra Sinarmas. Pada pelatihan ini saya
+              berkesempatan mempelajari lebih lanjut dalam Pembuatan Website dan
+              Aplikasi Android menggunakan Technology yang paling sering
+              digunakan seperti, Javascript, PHP, Laravel, dan Java.
+            </p>
+          </div>
+          <!-- card 3 -->
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            class="w-full h-max p-4 bg-white font-Signika shadow-xl border-l-8 border-violet-800 mt-8 flex flex-col gap-4 rounded-md"
+          >
+            <div>
+              <h3 class="sm:text-xl lg:text-2xl">
+                Pelatihan Rumah Teknologi Indonesia
+              </h3>
+              <h4 class="sm:text-lg">Juni 2022 - September 2022</h4>
+            </div>
+            <p class="text-sm sm:text-base">
+              Kelas pelatihan ini merupakan program dari Yayasan Internert
+              Indonesia dan didukung Pemerintah Kota Surakarta. Pada pelatihan
+              ini saya berkesempatan mempelajari Pembuatan Aplikasi Android
+              menggunakan Kodular dan Google Firebase.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio -->
+      <div
+        id="project"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        class="container flex flex-col p-8 gap-16 sm:px-28 lg:px-0 lg:justify-center lg:items-center 2xl:container"
+      >
+        <div class="space-y-4">
+          <h2 class="font-Signika font-bold text-center">Highlight Project</h2>
+          <p class="text-center text-2xl font-bold font-Poppins">
+            Presenting My Portfolio and Case Studies
+          </p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="w-full h-auto">
+          <!-- Tabs Nav -->
+          <div
+            class="tabs_box relative flex flex-row gap-4 w-full h-max mb-8 font-Signika justify-center sm:justify-around text-blue-500 flex-wrap"
+          >
+            <button
+              class="tab_btn py-1 px-8 border-2 tab-active border-blue-400 rounded-full text-sm sm:text-lg lg:text-xl transition-all"
+            >
+              Website
+            </button>
+            <button
+              class="tab_btn py-1 px-8 border-2 border-blue-400 rounded-full text-sm sm:text-lg lg:text-xl transition-all"
+            >
+              Mobile App
+            </button>
+            <button
+              class="tab_btn py-1 px-8 border-2 border-blue-400 rounded-full text-sm sm:text-lg lg:text-xl transition-all"
+            >
+              Lainnya
+            </button>
+          </div>
+
+          <!-- Content -->
+          <div class="content_box w-full h-auto mt-8 2xl:mt-12">
+            <div class="tab_content active-content animate-moving">
+              <div
+                class="w-full h-auto flex flex-col gap-8 lg:flex-row lg:flex-wrap lg:justify-center"
+              >
+                <!-- Project 1 -->
+                <div
+                  data-aos="zoom-in"
+                  class="w-auto h-auto flex flex-col gap-4 p-4 bg-white shadow-xl rounded-lg lg:w-1/3 lg:justify-between xl:w-1/3"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="./asset/Glatz-Autocare.png"
+                    alt=""
+                  />
+                  <div class="flex flex-row justify-between items-center px-4">
+                    <div class="flex flex-row gap-4">
+                      <i class="fa-brands fa-wordpress text-3xl"></i>
+                      <i class="fa-brands fa-elementor text-3xl"></i>
+                    </div>
+                    <div>
+                      <a
+                        class="py-2 rounded-full px-4 text-white bg-[#0077FF]"
+                        href="https://glatzauto.com"
+                        target="_blank"
+                        ><i class="fa-solid fa-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 2 -->
+                <div
+                  data-aos="zoom-in"
+                  class="w-auto h-auto flex flex-col gap-4 p-4 bg-white shadow-xl rounded-lg lg:w-1/2 lg:justify-between xl:w-1/3"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="./asset/Batik-Chandani.png"
+                    alt=""
+                  />
+                  <div class="flex flex-row justify-between items-center px-4">
+                    <div class="flex flex-row gap-4">
+                      <i class="fa-brands fa-wordpress text-3xl"></i>
+                      <i class="fa-brands fa-elementor text-3xl"></i>
+                    </div>
+                    <div>
+                      <a
+                        class="py-2 rounded-full px-4 text-white bg-[#0077FF]"
+                        href="https://batikchandani.com"
+                        target="_blank"
+                        ><i class="fa-solid fa-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 3 -->
+                <div
+                  data-aos="zoom-in"
+                  class="w-auto h-auto flex flex-col gap-4 p-4 bg-white shadow-xl rounded-lg lg:w-1/2 lg:justify-between xl:w-1/3"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="./asset/Madani-Plast.png"
+                    alt=""
+                  />
+                  <div class="flex flex-row justify-between items-center px-4">
+                    <div class="flex flex-row gap-4">
+                      <i class="fa-brands fa-wordpress text-3xl"></i>
+                      <i class="fa-brands fa-elementor text-3xl"></i>
+                    </div>
+                    <div>
+                      <a
+                        class="py-2 rounded-full px-4 text-white bg-[#0077FF]"
+                        href="https://madaniplast.com"
+                        target="_blank"
+                        ><i class="fa-solid fa-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 4 -->
+                <div
+                  data-aos="zoom-in"
+                  class="w-auto h-auto flex flex-col gap-4 p-4 bg-white shadow-xl rounded-lg lg:w-1/3 lg:justify-between xl:w-1/3"
+                >
+                  <img
+                    class="rounded-lg"
+                    src="./asset/griyavandel.png"
+                    alt=""
+                  />
+                  <div class="flex flex-row justify-between items-center px-4">
+                    <div class="flex flex-row gap-4">
+                      <i class="fa-brands fa-wordpress text-3xl"></i>
+                      <i class="fa-brands fa-elementor text-3xl"></i>
+                    </div>
+                    <div>
+                      <a
+                        class="py-2 rounded-full px-4 text-white bg-[#0077FF]"
+                        href="https://griyavandel.com"
+                        target="_blank"
+                        ><i class="fa-solid fa-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab_content animate-moving w-full flex flex-col gap-8 lg:flex-row lg:flex-wrap lg:justify-center h-96 lg:px-12"
+            >
+              <h1 class="sm:text-xl">Empety Project, Comming Soon!</h1>
+            </div>
+            <div
+              class="tab_content animate-moving w-full h-96 flex flex-col gap-8 lg:flex-row lg:flex-wrap lg:justify-center xl:px-12"
+            >
+              <h1 class="sm:text-xl">Empety Project, Comming Soon!</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Me -->
+      <div
+        id="contact"
+        class="flex flex-col items-center w-full h-max bg-gradient-to-r from-[#4b36c3] to-[#4c7cd1] rounded-t-3xl p-8 mt-8 lg:flex-row"
+      >
+        <!-- text -->
+        <div
+          data-aos="fade-up-right"
+          data-aos-delay="700"
+          class="w-full h-max flex flex-col justify-center items-center mb-8 lg:px-8"
+        >
+          <h2
+            class="text-xl font-Signika text-white sm:text-3xl lg:text-4xl lg:w-full lg:text-left"
+          >
+            Contact
+          </h2>
+          <h3
+            class="text-xl mt-8 font-Signika text-white sm:text-3xl lg:text-left lg:w-full"
+          >
+            Send Me a Massage
+          </h3>
+          <p
+            class="font-poppins text-sm text-white text-center sm:text-lg lg:text-left lg:w-full"
+          >
+            Anda dapat mengirimkan pesan langusung disini, dan saya akan
+            membalas pesan anda secepatnya!
+          </p>
+          <div class="w-full h-max flex flex-col gap-4 mt-8 text-white text-xl">
+            <!-- items 1 -->
+            <div
+              class="w-max h-max flex flex-row justify-center items-center gap-4"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center shadow-xl rounded-md backdrop-blur-lg bg-gradient-to-r from-[#5d95e3] to-[#4340bc]"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <p class="text-sm sm:text-lg">+62 8516-1742-553</p>
+            </div>
+            <!-- items 2 -->
+            <div
+              class="w-max h-max flex flex-row justify-center items-center gap-4"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center shadow-xl rounded-md backdrop-blur-lg bg-gradient-to-r from-[#5d95e3] to-[#4340bc]"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <p class="text-sm sm:text-lg">fushigo17@gmail.com</p>
+            </div>
+            <!-- items 2 -->
+            <div
+              class="w-max h-max flex flex-row justify-center items-center gap-4"
+            >
+              <div
+                class="w-12 h-12 flex items-center justify-center shadow-xl rounded-md backdrop-blur-lg bg-gradient-to-r from-[#5d95e3] to-[#4340bc]"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <p class="text-sm sm:text-lg">
+                Surakarta, Jawa Tengah, 57138, <br />
+                Indonesia
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- form -->
+        <div
+          data-aos="fade-up-left"
+          data-aos-delay="700"
+          class="w-full h-max flex justify-center items-center"
+        >
+          <div class="w-full h-max bg-[#5d95e3] p-5 rounded-lg">
+            <form
+              name="submit-to-google-sheet"
+              action=""
+              class="flex flex-col gap-4 font-Poppins"
+            >
+              <input
+                type="text"
+                name="nama"
+                placeholder="Name"
+                required
+                class="bg-[#030B25] p-1.5 text-white outline-[#4340bc] rounded-md"
+              />
+              <input
+                type="email"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                title="Enter a valid email address"
+                required=""
+                placeholder="Email"
+                class="bg-[#030B25] p-1.5 text-white outline-[#4340bc] rounded-md"
+              />
+              <textarea
+                name="pesan"
+                required=""
+                id="massage"
+                cols="30"
+                rows="10"
+                placeholder="Massage"
+                class="resize-none outline-none rounded-lg bg-[#030B25] p-1.5 text-white"
+              ></textarea>
+              <button
+                type="submit"
+                id="griyavandel"
+                class="project-btn relative hover:shadow-lg bg-white w-32 h-10 transition-[0.5s] hover:tracking-wide before:content-[''] before:absolute before:inset-[2px] before:bg-[#4b36c3] sm:w-48 sm:h-16"
+              >
+                <span
+                  class="relative w-full z-10 text-white font-Signika font-bold"
+                  >Send Massage</span
+                ><i
+                  id="frame"
+                  class="absolute inset-0 block before:content-[''] before:absolute before:top-[-1px] before:left-[80%] before:w-[10px] before:h-[4px] before:bg-white before:translate-x-[-50%] before:skew-x-[325deg] before:transition-[0.5s] after:content-[''] after:absolute after:bottom-[-1px] after:left-[20%] after:w-[10px] after:h-[4px] after:bg-white after:translate-x-[-50%] after:skew-x-[325deg] after:transition-[0.5s]"
+                ></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="w-full h-max flex justify-center items-center border-t border-white bg-gradient-to-r from-[#4b36c3] to-[#4c7cd1] p-8 text-white"
+    >
+      <div
+        class="container w-full h-max lg:flex lg:flex-row justify-between items-center flex-wrap"
+      >
+        <p class="text-sm font-signika lg:text-xl">
+          Thank you for visiting my page
+        </p>
+        <p class="text-sm font-signika lg:text-base">
+          Copyright © 2023 Rizky Andika Sukma
+        </p>
+        <div
+          class="w-max h-max flex flex-row justify-center gap-4 items-center mt-4"
+        >
+          <!-- items 1 -->
+          <a
+            href="https://www.instagram.com/fushigo__/?igshid=MzNlNGNkZWQ4Mg%3D%3D"
+            class="w-10 h-8 flex items-center justify-center shadow-xl rounded-md backdrop-blur-lg bg-gradient-to-r from-[#5d95e3] to-[#4340bc] lg:w-14 lg:h-12"
+          >
+            <i class="fa-brands fa-instagram lg:text-2xl"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rizky-andika-25b324265/"
+            class="w-10 h-8 flex items-center justify-center shadow-xl rounded-md backdrop-blur-lg bg-gradient-to-r from-[#5d95e3] to-[#4340bc] lg:w-14 lg:h-12"
+          >
+            <i class="fa-brands fa-linkedin lg:text-2xl"></i>
+          </a>
+          <a
+            href="https://github.com/fushigo/"
+            class="w-10 h-8 flex items-center justify-center shadow-xl rounded-md backdrop-blur-lg bg-gradient-to-r from-[#5d95e3] to-[#4340bc] lg:w-14 lg:h-12"
+          >
+            <i class="fa-brands fa-github lg:text-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KQXML9LL9M"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./vendor/aos/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
